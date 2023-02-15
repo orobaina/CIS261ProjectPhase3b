@@ -6,13 +6,9 @@
 from datetime import datetime
 # write the line of code to assign Employees.txt to the variable FILENAME (Hint: see week 6, lab 2 as a guide)
 FILENAME = "Employees.txt"
-
-
-
 def GetEmpName():
     empname = input("Enter employee name: ")
     return empname
-
 def GetDatesWorked():
     while True:
         date_str = input("Enter from date (YYYY-MM-DD): ")
@@ -77,7 +73,7 @@ def printinfo(DetailsPrinted):
             EmpDetail = EmpFile.readline()
             # write the if statemment that will break out of the while loop when no data is left in the file
             if not EmpDetail:
-                break
+              break
             # write the line of code that will remove the carriage return from EmpDetail
             EmpDetail = EmpDetail.replace("\n", "")
             # write the ine of code that will split EmpDetail on the pipe delimiter and assign to the list EmpList
@@ -155,7 +151,6 @@ if __name__ == "__main__":
             printinfo(DetailsPrinted)
 
 #***********************************************************************************************************************************************
-
 
 
 
